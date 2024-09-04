@@ -1,1 +1,1 @@
-Hallo Welkom
+print("welkom");
