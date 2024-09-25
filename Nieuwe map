@@ -1,0 +1,90 @@
+String kleur = "groen";
+int timer = 0;
+
+void setup(){
+  size(700,800);
+  background(150,150,255);
+  
+  
+  
+  fill(0,0,0);
+  rect(220,100,250,600);
+  
+  fill(0,0,0);
+  rect(325,700,50,600);
+  
+  //rood licht
+  if(kleur=="rood"){
+    fill(255,0,0);
+  }else{
+   fill(80,80,80); 
+  }
+  ellipse(345,200,180,180);
+  
+  //groen licht
+  if(kleur=="groen"){
+  fill(0,255,0);
+  }
+  else{ fill(80,80,80);}
+  ellipse(345,600,180,180);
+  
+  //oranje licht
+  if(kleur=="oranje"){
+  fill(255,165,0);}
+  else{ fill(80,80,80);}
+  ellipse(345,400,180,180);
+  
+  stroke(255,255,255);
+  fill(255,255,255);
+  ellipse(170,10,140,140);
+  
+  stroke(255,255,255);
+  fill(255,255,255);
+  ellipse(85,10,140,140);
+  
+  stroke(255,255,255);
+  fill(255,255,255);
+  ellipse(260,10,140,140);
+  
+  stroke(255,170,0);
+  fill(255,200,0);
+  ellipse(650,20,200,200);
+  noStroke();
+}
+
+void draw(){
+  timer = timer + 1;
+  if(timer > 120){
+   timer = 0; 
+    if(kleur=="groen"){
+     kleur = "oranje"; 
+    }
+   else if(kleur== "oranje"){kleur = "rood";}
+   else if(kleur== "rood"){kleur = "groen";}
+  }
+   //rood licht
+  if(kleur=="rood"){
+    fill(255,0,0);
+  }else{
+   fill(80,80,80); 
+  }
+  ellipse(345,200,180,180);
+  
+  //groen licht
+  if(kleur=="groen"){
+  fill(0,255,0);
+  }
+  else{ fill(80,80,80);}
+  ellipse(345,600,180,180);
+  
+  //oranje licht
+  if(kleur=="oranje"){
+  fill(255,165,0);}
+  else{ fill(80,80,80);}
+  ellipse(345,400,180,180); 
+
+ //van rood naar groen
+ if(kleur=="green"){fill(0,255,0);}
+ else{ fill(80,80,80);}
+
+}

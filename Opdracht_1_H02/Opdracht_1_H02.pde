@@ -4,7 +4,7 @@ println("top dat je komt kijken");
 print("welkom");
 
 size(1000, 1000);
-background(0-0-153);
+background(0-0-100);
 fill(0,255,0);
 textSize(53);
 text("ik wens je veel succes", 9, 70);
